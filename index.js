@@ -24,14 +24,14 @@ app.use(express.static(__dirname + '/public'))
 //Register partials
 hbs.registerPartials(__dirname + '/views/partials');
 
+// -------------DO NOT UNCOMMENT THIS------------
 //Use body parser. To be able parse post request information
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: true }));
+// const bodyParser = require('body-parser');
+// app.use(bodyParser.urlencoded({ extended: true }));
+// ----------------------------------------------
 
+//Register Routes here
 
-//Register routes
-const todoRoutes = require('./routes/todo.routes');
-app.use('/', todoRoutes);
 
 //Start the server to begin listening on a port
 app.listen(3000, '127.0.0.1', () => {
