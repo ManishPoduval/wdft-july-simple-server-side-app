@@ -6,7 +6,7 @@ let configOptions = {
     useUnifiedTopology: true 
 }
 mongoose.connect('mongodb://localhost:27017/todos', configOptions)
-    .then(() => {
+    .then((self) => {
         console.log('Yayyy Database is connected');
     })
     .catch(() => {

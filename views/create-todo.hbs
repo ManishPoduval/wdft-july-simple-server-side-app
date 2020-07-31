@@ -1,0 +1,17 @@
+<p>In Create</p>
+
+<form method="POST" action="/create" >
+  <div class="form-group">
+    <label for="todoName">Name</label>
+    <input name="name" type="text" class="form-control" id="todoName" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="todoDescription">Description</label>
+    <input name="description" type="text" class="form-control" id="todoDescription">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{{#if successTodo}}
+ <p>Successfully added Todo
+{{/if }}
